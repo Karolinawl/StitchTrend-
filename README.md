@@ -1,72 +1,184 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Project Insights
 
-## Template Instructions
+StitchTrend is a capstone project created as part of the Data Analytics with Artificial Intelligence course.
+The aim of this project is to explore how yarn weight and gauge relate to the popularity of knitting patterns on Ravelry, using data analysis tools learned during the course.
 
-Welcome,
+## Dataset Content
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+The dataset will be collected from the Ravelry API and will include publicly available information about knitting and crochet patterns.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+Planned data fields include:
 
-## How to use this repo
+-pattern name and category (e.g. hats, scarves, jumpers),
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+-craft type (knitting, crochet),
 
-1. Copy the URL of your repository to your clipboard.
+-yarn thickness (e.g. DK, worsted, bulky, 2ply, 4ply),
 
-1. In VS Code, select **File** -> **Open Folder**.
+-gauge information (if available),
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+-free or paid status,
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
+-popularity indicators such as number of projects,
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+The dataset size will be limited to what is needed for analysis and stored in versioned folders.
 
-1. In VS Code, select **File** > **Open Folder** again.
+## Business Requirements
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+The project will focus on:
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+-understanding which yarn thickness are linked to more popular patterns,
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+-comparing popularity between free and paid patterns,
 
-1. Choose **Venv** from the dropdown list.
+-exploring whether gauge (stitch density) has any relationship with popularity,
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+-helping crafters and small handmade sellers decide what to make using yarn they already have,
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+-explore whether pattern popularity shows seasonal trends based on publication dates and pattern characteristics.
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
+## Hypothesis and How to Validate
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
+Planned hypotheses include:
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+-Free patterns may be more popular than paid ones,
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
+-Some yarn thickness may be more popular than others,
 
- ```console
- pip3 install -r requirements.txt
- ```
+-Simpler or faster projects (using thicker yarn or lower stitch density) may attract more engagement,
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
+-Patterns published in autumn and winter months show higher popularity than those published in spring and summer,
 
-1. Click the **kernel** button and choose **Python Environments**.
+-Lightweight yarns (lace, fingering, sport) are more common in patterns published in spring and summer. 
 
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
+-Heavier yarns (worsted, bulky) are more common in autumn and winter patterns.
 
-```console
-! python --version
-```
+These hypotheses will be explored using descriptive statistics, visualisations, and simple statistical tests where possible.
 
-## Deployment Reminders
+## Project Plan
 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
+Planned steps for the project:
 
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+1. Collect data from the Ravelry API.
+
+2. Clean and prepare the dataset.
+
+3. Explore the data using basic statistics and charts.
+
+4. Test hypotheses using appropriate statistical methods.
+
+5. Experiment with simple machine learning techniques.
+
+6. Summarise findings and limitations.
+
+Data will be managed using separate folders for raw, processed, and analysed data.
+
+## Mapping Business Requirements to Data Visualisations
+
+Planned visualisations include:
+
+-bar charts showing yarn weight and popularity,
+
+-boxplots comparing free and paid patterns,
+
+-scatter plots for price and popularity,
+
+-histograms showing the distribution of popularity,
+
+Each visualisation will be used to support a specific business question.
+
+## Analysis Techniques Used
+
+The project will use:
+
+-basic descriptive statistics (mean, median, standard deviation),
+
+-exploratory data analysis (EDA),
+
+-simple statistical tests,
+
+-basic machine learning models for exploration,
+
+The analysis may be limited by missing or inconsistent data, especially for gauge information.
+Alternative approaches may be considered if some fields are unavailable.
+
+## Use of Generative AI Tools
+
+ChatGPT and GitHub Copilot (within VS Code) were used only as a support during development, mainly to help with understanding code, debugging errors, and suggesting possible improvements.
+
+All data analysis decisions, code implementation, and interpretation of results were completed independently by the author.
+
+## Ethical Considerations
+
+Only public data will be used
+
+No personal or private user information will be collected
+
+API credentials will be kept secure
+
+Any potential bias or data limitations will be acknowledged
+
+## Dashboard Design
+
+If time allows, a dashboard will be created to present key insights in a clear and simple way.
+
+Planned dashboard elements include:
+
+summary metrics
+
+charts showing yarn thicknes and popularity
+
+simple filtering options
+
+a basic gauge-to-yarn-weight helper
+
+The dashboard will be designed for both technical and non-technical users.
+
+## Unfixed Bugs
+
+Some issues may remain unresolved, such as:
+
+missing or unclear gauge values
+
+incomplete yarn weight information
+
+These issues are expected due to limitations of the source data.
+
+## Development Roadmap
+
+Future improvements may include:
+
+better handling of gauge data
+
+more advanced pattern matching
+
+larger datasets
+
+improved visualisations and models
+
+## Deployment
+
+The project may be run locally.
+Deployment to a cloud platform will be considered if time allows.
+
+## Main Data Analysis Libraries
+
+Planned libraries include:
+
+-pandas
+
+-numpy
+
+-scikit-learn
+
+-matplotlib / plotly
+
+## Credits
+
+Data source: Ravelry API
+
+Learning materials: Data Analytics with Artificial Intelligence course
+
+## Acknowledgements
+
+Thanks to course instructors, mentors, and peers for support during the learning process.
