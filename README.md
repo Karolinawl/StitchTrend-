@@ -3,6 +3,9 @@
 StitchTrend is a capstone project created as part of the Data Analytics with Artificial Intelligence course.
 The aim of this project is to explore how yarn weight and gauge relate to the popularity of knitting patterns on Ravelry, using data analysis tools learned during the course.
 
+## Glossary and some info about knitting
+
+
 ## Dataset Content
 
 The dataset will be collected from the Ravelry API and will include publicly available information about knitting and crochet patterns.
@@ -114,7 +117,7 @@ Only public data will be used
 
 No personal or private user information will be collected
 
-API credentials will be kept secure
+API credentials are stored in a .env file and loaded using python-dotenv to prevent accidental exposure of sensitive information in the codebase.
 
 Any potential bias or data limitations will be acknowledged
 
