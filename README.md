@@ -26,6 +26,13 @@ Planned data fields include:
 
 The dataset size will be limited to what is needed for analysis and stored in versioned folders.
 
+## Data Collection
+
+Data is collected using the public, read-only Ravelry API.
+API responses are initially stored in raw JSON format to preserve the original data structure.
+Raw data is saved in versioned folders and later processed into a structured dataset suitable for analysis.
+Data were collected in two stages: pattern discovery and pattern detail enrichment.
+
 ## Business Requirements
 
 The project will focus on:
