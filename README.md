@@ -14,7 +14,7 @@ Planned data fields include:
 
 -pattern name and category (e.g. hats, scarves, jumpers),
 
--craft type (knitting, crochet),
+-craft type (knitting),
 
 -yarn thickness (e.g. DK, worsted, bulky, 2ply, 4ply),
 
