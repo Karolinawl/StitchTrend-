@@ -135,22 +135,6 @@ API credentials are stored in a .env file and loaded using python-dotenv to prev
 
 Any potential bias or data limitations will be acknowledged
 
-## Dashboard Design
-
-If time allows, a dashboard will be created to present key insights in a clear and simple way.
-
-Planned dashboard elements include:
-
-summary metrics
-
-charts showing yarn thicknes and popularity
-
-simple filtering options
-
-a basic gauge-to-yarn-weight helper
-
-The dashboard will be designed for both technical and non-technical users.
-
 ## Unfixed Bugs
 
 Some issues may remain unresolved, such as:
