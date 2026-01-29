@@ -107,8 +107,6 @@ The project will use:
 
 -simple statistical tests,
 
--basic machine learning models for exploration,
-
 The analysis may be limited by missing or inconsistent data, especially for gauge information.
 Alternative approaches may be considered if some fields are unavailable.
 
