@@ -117,7 +117,8 @@ The dashboard includes:
 - price vs popularity,
 - overall distribution of pattern popularity.
 
-Due to limited access to Power BI after the course, the dashboard was exported as a PDF file, it's available as PDF file in the project folder.
+Due to limited access to Power BI Service after course completion, the dashboard was not published as a live web app.
+Instead, the final Power BI dashboard is provided as a PDF export in the `dashboard/` folder.
 
 ## Use of Generative AI Tools
 
