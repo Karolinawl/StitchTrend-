@@ -5,7 +5,7 @@ The aim of this project is to explore how yarn weight and gauge relate to the po
 
 ## Dataset Content
 
-The dataset will be collected from the Ravelry API and will include publicly available information about knitting and crochet patterns.
+The dataset was collected from the Ravelry API and includes publicly available information about knitting and crochet patterns.
 
 Planned data fields include:
 
@@ -32,7 +32,7 @@ Data were collected in two stages: pattern discovery and pattern detail enrichme
 
 ## Business Requirements
 
-The project will focus on:
+The project focus on:
 
 -understanding which yarn thickness are linked to more popular patterns,
 
@@ -46,7 +46,7 @@ The project will focus on:
 
 ## Hypothesis and How to Validate
 
-Planned hypotheses include:
+The following hypotheses were explored:
 
 -Free patterns may be more popular than paid ones,
 
@@ -64,7 +64,9 @@ These hypotheses will be explored using descriptive statistics, visualisations, 
 
 ## Project Plan
 
-Planned steps for the project:
+## Project Implementation
+
+The project followed these steps:
 
 1. Collect data from the Ravelry API.
 
@@ -82,7 +84,7 @@ Data will be managed using separate folders for raw, processed, and analysed dat
 
 ## Mapping Business Requirements to Data Visualisations
 
-Planned visualisations include:
+The following visualisations were used:
 
 -bar charts showing yarn weight and popularity,
 
@@ -96,7 +98,7 @@ Each visualisation will be used to support a specific business question.
 
 ## Analysis Techniques Used
 
-The project will use:
+The project used:
 
 -basic descriptive statistics (mean, median, standard deviation),
 
@@ -117,8 +119,20 @@ The dashboard includes:
 - price vs popularity,
 - overall distribution of pattern popularity.
 
-Due to limited access to Power BI Service after course completion, the dashboard was not published as a live web app.
-Instead, the final Power BI dashboard is provided as a PDF export in the `dashboard/` folder.
+The Power BI dashboard is included in the `dashboard/` folder as a .pbix file.
+A PDF version is also provided for reference.
+
+## Practical Value of the Analysis
+
+This project provides insights into knitting and crochet pattern popularity using real-world data from the Ravelry platform.
+
+The findings may be useful for:
+
+- pattern designers looking to create more popular designs  
+- crafters deciding what to make based on trends  
+- small handmade sellers selecting products aligned with demand  
+
+The analysis highlights trends in user engagement and supports better understanding of what drives popularity within the crafting community.
 
 ## Use of Generative AI Tools
 
