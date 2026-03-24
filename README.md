@@ -62,7 +62,10 @@ The following hypotheses were explored:
 
 These hypotheses will be explored using descriptive statistics, visualisations, and simple statistical tests where possible.
 
-## Project Plan
+## Project Planning
+
+A project board was used to organise and track progress.
+https://github.com/users/Karolinawl/projects/3/views/1?template_dialog_tab=featured&layout_template=board
 
 ## Project Implementation
 
