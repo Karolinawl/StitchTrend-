@@ -84,17 +84,24 @@ Data will be managed using separate folders for raw, processed, and analysed dat
 
 ## Mapping Business Requirements to Data Visualisations
 
-The following visualisations were used:
+Each business requirement is supported by specific visualisations used in the analysis:
 
--bar charts showing yarn weight and popularity,
+**1. Understanding which yarn thickness is linked to more popular patterns**  
+→ Bar charts showing average popularity (projects_count / favourites_count) by yarn weight  
 
--boxplots comparing free and paid patterns,
+**2. Comparing popularity between free and paid patterns**  
+→ Boxplots comparing distribution of popularity metrics for free vs paid patterns  
 
--scatter plots for price and popularity,
+**3. Exploring the relationship between gauge and popularity**  
+→ Scatter plots showing gauge values against popularity metrics  
 
--histograms showing the distribution of popularity,
+**4. Identifying trends in pattern popularity**  
+→ Histograms showing the distribution of popularity across patterns  
 
-Each visualisation will be used to support a specific business question.
+**5. Supporting crafters and small sellers in decision-making**  
+→ Combined visual insights from multiple charts highlighting popular categories and trends  
+
+Each visualisation directly supports a specific business question and helps translate data insights into practical understanding.
 
 ## Analysis Techniques Used
 
