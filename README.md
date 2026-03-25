@@ -136,13 +136,17 @@ A PDF version is also provided for reference.
 
 This project provides insights into knitting and crochet pattern popularity using real-world data from the Ravelry platform.
 
+The analysis helps to better understand how different factors such as yarn weight, pattern type, and accessibility (free vs paid) relate to user engagement.
+
 The findings may be useful for:
 
-- pattern designers looking to create more popular designs  
-- crafters deciding what to make based on trends  
-- small handmade sellers selecting products aligned with demand  
+- **Pattern designers** – to identify which types of patterns are more likely to attract attention and engagement  
+- **Crafters** – to discover popular and trending projects and make more informed decisions about what to create  
+- **Small handmade sellers** – to choose products that align with current trends and demand  
 
-The analysis highlights trends in user engagement and supports better understanding of what drives popularity within the crafting community.
+The analysis also highlights that pattern popularity is unevenly distributed, with a small number of patterns generating significantly higher engagement than others. This insight can help prioritise designs and better understand user preferences within the crafting community.
+
+Overall, the project demonstrates how data analytics can be applied to a creative domain to support decision-making and uncover meaningful trends.
 
 ## Use of Generative AI Tools
 
