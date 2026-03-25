@@ -7,19 +7,19 @@ The aim of this project is to explore how yarn weight and gauge relate to the po
 
 The dataset was collected from the Ravelry API and includes publicly available information about knitting and crochet patterns.
 
-Planned data fields include:
+Data fields include:
 
--pattern name and category (e.g. hats, scarves, jumpers),
+- pattern name and category (e.g. hats, scarves, jumpers),
 
--craft type (knitting),
+- craft type (knitting),
 
--yarn thickness (e.g. DK, worsted, bulky, 2ply, 4ply),
+- yarn thickness (e.g. DK, worsted, bulky, 2ply, 4ply),
 
--gauge information (if available),
+- gauge information (if available),
 
--free or paid status,
+- free or paid status,
 
--popularity indicators such as number of projects,
+- popularity indicators such as number of projects,
 
 The dataset size will be limited to what is needed for analysis and stored in versioned folders.
 
@@ -29,36 +29,37 @@ Data is collected using the public, read-only Ravelry API.
 API responses are initially stored in raw JSON format to preserve the original data structure.
 Raw data is saved in versioned folders and later processed into a structured dataset suitable for analysis.
 Data were collected in two stages: pattern discovery and pattern detail enrichment.
+These hypotheses were explored using simple analysis and charts, so the results show general trends rather than final conclusions.
 
 ## Business Requirements
 
-The project focus on:
+The project focuses on:
 
--understanding which yarn thickness are linked to more popular patterns,
+- understanding which yarn thickness are linked to more popular patterns,
 
--comparing popularity between free and paid patterns,
+- comparing popularity between free and paid patterns,
 
--exploring whether gauge (stitch density) has any relationship with popularity,
+- exploring whether gauge (stitch density) has any relationship with popularity,
 
--helping crafters and small handmade sellers decide what to make using yarn they already have,
+- helping crafters and small handmade sellers decide what to make using yarn they already have,
 
--explore whether pattern popularity shows seasonal trends based on publication dates and pattern characteristics.
+- explore whether pattern popularity shows seasonal trends based on publication dates and pattern characteristics.
 
 ## Hypothesis and How to Validate
 
 The following hypotheses were explored:
 
--Free patterns may be more popular than paid ones,
+- Free patterns may be more popular than paid ones,
 
--Some yarn thickness may be more popular than others,
+- Some yarn thickness may be more popular than others,
 
--Simpler or faster projects (using thicker yarn or lower stitch density) may attract more engagement,
+- Simpler or faster projects (using thicker yarn or lower stitch density) may attract more engagement,
 
--Patterns published in autumn and winter months show higher popularity than those published in spring and summer,
+- Patterns published in autumn and winter months show higher popularity than those published in spring and summer,
 
--Lightweight yarns (lace, fingering, sport) are more common in patterns published in spring and summer. 
+- Lightweight yarns (lace, fingering, sport) are more common in patterns published in spring and summer. 
 
--Heavier yarns (worsted, bulky) are more common in autumn and winter patterns.
+- Heavier yarns (worsted, bulky) are more common in autumn and winter patterns.
 
 These hypotheses will be explored using descriptive statistics, visualisations, and simple statistical tests where possible.
 
@@ -110,11 +111,11 @@ Each visualisation directly supports a specific business question and helps tran
 
 The project used:
 
--basic descriptive statistics (mean, median, standard deviation),
+- basic descriptive statistics (mean, median, standard deviation),
 
--exploratory data analysis (EDA),
+- exploratory data analysis (EDA),
 
--simple statistical tests,
+- simple statistical tests,
 
 The analysis may be limited by missing or inconsistent data, especially for gauge information.
 Alternative approaches may be considered if some fields are unavailable.
@@ -128,6 +129,10 @@ The dashboard includes:
 - comparison of free vs paid patterns,
 - price vs popularity,
 - overall distribution of pattern popularity.
+
+Some additional variables (such as gauge) were available in Power BI but were not explored in detail. This was because more time was spent on building the data pipeline and cleaning the dataset in Python.
+
+In future work, it would be better to balance data preparation and analysis to allow deeper exploration of all variables.
 
 The Power BI dashboard is included in the `dashboard/` folder as a .pbix file.
 A PDF version is also provided for reference.
@@ -156,21 +161,21 @@ All data analysis decisions, code implementation, and interpretation of results 
 
 ## Ethical Considerations
 
-Only public data will be used
+- Only public data will be used
 
-No personal or private user information will be collected
+- No personal or private user information will be collected
 
-API credentials are stored in a .env file and loaded using python-dotenv to prevent accidental exposure of sensitive information in the codebase.
+- API credentials are stored in a .env file and loaded using python-dotenv to prevent accidental exposure of sensitive information in the codebase.
 
-Any potential bias or data limitations will be acknowledged
+- Any potential bias or data limitations will be acknowledged
 
 ## Unfixed Bugs
 
 Some issues may remain unresolved, such as:
 
-missing or unclear gauge values
+- missing or unclear gauge values
 
-incomplete yarn weight information
+- incomplete yarn weight information
 
 These issues are expected due to limitations of the source data.
 
@@ -178,13 +183,13 @@ These issues are expected due to limitations of the source data.
 
 Future improvements may include:
 
-better handling of gauge data
+- better handling of gauge data
 
-more advanced pattern matching
+- more advanced pattern matching
 
-larger datasets
+- larger datasets
 
-improved visualisations and models
+- improved visualisations and models
 
 ## Deployment
 
@@ -193,15 +198,15 @@ Deployment to a cloud platform will be considered if time allows.
 
 ## Main Data Analysis Libraries
 
-Planned libraries include:
+Libraries used:
 
--pandas
+- pandas
 
--numpy
+- numpy
 
--scikit-learn
+- scikit-learn
 
--matplotlib / plotly
+- matplotlib / plotly
 
 ## Credits
 
