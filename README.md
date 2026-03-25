@@ -62,7 +62,10 @@ The following hypotheses were explored:
 
 These hypotheses will be explored using descriptive statistics, visualisations, and simple statistical tests where possible.
 
-## Project Plan
+## Project Planning
+
+A project board was used to organise and track progress.
+https://github.com/users/Karolinawl/projects/3/views/1?template_dialog_tab=featured&layout_template=board
 
 ## Project Implementation
 
@@ -205,3 +208,17 @@ Learning materials: Data Analytics with Artificial Intelligence course
 ## Acknowledgements
 
 Thanks to course instructors, mentors, and peers for support during the learning process.
+
+## Glossary
+
+**Gauge**  
+Gauge refers to the number of stitches and rows per unit of measurement (usually 10 cm / 4 inches). It determines how tight or loose a knitted or crocheted fabric is.
+
+**Swatch (Gauge Sample)**  
+A swatch is a small sample piece created to measure gauge. It helps ensure that the final project will have the correct size and fit.
+
+**Yarn Weight**  
+Yarn weight describes the thickness of the yarn (e.g. lace, fingering, DK, worsted, bulky). It affects the texture, drape, and speed of a project.
+
+**Pattern Popularity**  
+In this project, popularity is measured using indicators such as the number of projects and number of favourites on the Ravelry platform.
